@@ -135,7 +135,7 @@
       }
     }
   },
-  "defaultProject": "demo",
+  "defaultProject": "ngx-recaptcha-v3",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }

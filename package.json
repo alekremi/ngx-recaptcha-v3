@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && xcopy README.md dist\\ngx-recaptcha-v3",
+    "build": "ng build ngx-recaptcha-v3  && xcopy README.md dist\\ngx-recaptcha-v3",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
