@@ -1,0 +1,91 @@
+form {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 16px;
+  grid-template-areas:
+    'heading heading'
+    '. .'
+    '. .'
+    '. checkbox'
+    'branding branding'
+    'submit submit'
+    'unload unload'
+    'token token';
+}
+
+h1 {
+  grid-area: heading;
+}
+
+input[type='submit'] {
+  grid-area: submit;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+input[type='button'] {
+  grid-area: unload;
+  color: brown;
+  font-weight: bold;
+}
+
+.checkbox {
+  grid-area: checkbox;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.branding {
+  grid-area: branding;
+  font-size: smaller;
+  color: darkgray;
+}
+
+.token {
+  grid-area: token;
+  font-size: smaller;
+  color: darkblue;
+  width: 200px;
+  text-overflow: ellipsis;
+}
+
+input[type='text'] {
+  height: 18px;
+}
+
+input[type='checkbox'] {
+  height: 16px;
+  width: 16px;
+}
+
+input[type='submit'],
+input[type='button'] {
+  height: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    margin: 0 40%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  form {
+    margin: 0 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    margin: 0 15%;
+  }
+}
+
+/* sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px */

@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode", 
+    "dbaeumer.vscode-eslint", 
+    "rvest.vs-code-prettier-eslint", 
+    "cyrilletuzi.angular-schematics",
+    "johnpapa.angular2",
+    "eamodio.gitlens"
+  ]
+}

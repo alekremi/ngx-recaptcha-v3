@@ -1,0 +1,6 @@
+**/dist
+**/coverage
+**/.vscode
+**/.github
+**/node_modules
+**/*.js

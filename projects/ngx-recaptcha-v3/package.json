@@ -1,0 +1,31 @@
+{
+  "name": "@alekremi/ngx-recaptcha-v3",
+  "version": "1.1.0",
+  "author": {
+    "name": "Aleksandr Kreminskij",
+    "email": "aleksandr.kreminskij@gmail.com"
+  },
+  "description": "Library to integrate RecaptchaV3 with Angular",
+  "homepage": "https://github.com/alekremi/ngx-recaptcha-v3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alekremi/ngx-recaptcha-v3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alekremi/ngx-recaptcha-v3/issues"
+  },
+  "keywords": [
+    "angular",
+    "RecaptchaV3",
+    "RecaptchaV3 module",
+    "RecaptchaV3 service"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^12.1.1",
+    "@angular/core": "^12.1.1"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}

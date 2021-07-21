@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="executeAction()">
+  <h1>@alekremi/ngx-recaptcha-v3 demo</h1>
+
+  <label>Action name</label>
+  <input type="text" formControlName="action" />
+
+  <label>Language code</label>
+  <input type="text" formControlName="language" />
+
+  <div class="checkbox">
+    <input type="checkbox" id="badgeHidden" formControlName="badgeHidden" />
+    <label for="badgeHidden">Badge hidden</label>
+  </div>
+
+  <div class="branding" *ngIf="getControlValue('badgeHidden')">
+    This site is protected by reCAPTCHA and the Google
+    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+  </div>
+
+  <input type="submit" [disabled]="!form.valid" value="Execute action" />
+  <input type="button" (click)="unloadScript()" value="Unload script" />
+</form>
